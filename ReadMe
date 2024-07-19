@@ -1,0 +1,5 @@
+Prompt file contains a prompt you can use to parse your resume into JSON format using ChatGPT.
+ 
+You can then use this JSON structure to parse your resume content.
+
+You can replace the placeholder text with the actual information extraction logic tailored to your resume format.
