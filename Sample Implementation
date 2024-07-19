@@ -1,0 +1,62 @@
+import json
+
+def parse_resume(resume_text):
+    # This is a simplified example. In practice, you would use NLP techniques to extract information.
+    resume_json = {
+        "name": "John Doe",
+        "contact": {
+            "email": "johndoe@example.com",
+            "phone": "555-555-5555",
+            "address": "123 Main St, Anytown, USA"
+        },
+        "summary": "Experienced software engineer with a passion for developing innovative programs...",
+        "education": [
+            {
+                "degree": "B.Tech",
+                "field": "Computer Science",
+                "institution": "ABES Engineering College",
+                "graduation_year": "2024"
+            }
+        ],
+        "experience": [
+            {
+                "job_title": "Data Analyst Intern",
+                "company": "Intervie Tech",
+                "start_date": "June 2023",
+                "end_date": "August 2023",
+                "responsibilities": [
+                    "Conducted data collection, preparation, and exploratory analysis",
+                    "Led team in project planning and execution"
+                ]
+            }
+        ],
+        "skills": [
+            "Python",
+            "Machine Learning"
+        ],
+        "projects": [
+            {
+                "title": "NLP Project",
+                "description": "Developed a model to analyze and classify text data",
+                "technologies": [
+                    "Python",
+                    "NLTK"
+                ]
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Machine Learning Certification",
+                "institution": "Coursera",
+                "year": "2022"
+            }
+        ]
+    }
+    return json.dumps(resume_json, indent=4)
+
+resume_text = """
+Your resume text goes here...
+"""
+
+parsed_resume = parse_resume(resume_text)
+print(parsed_resume)
